@@ -1,0 +1,2 @@
+# OKS
+Ověřování kvality software
