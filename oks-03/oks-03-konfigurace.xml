@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="pFormat">[%-level] - %msg%n</Property>
+        <Property name="pNazevSouboru">oks-03-log.txt</Property>
+    </Properties>
+    <Appenders>
+        <File name="soubor" fileName="${pNazevSouboru}" immediateFlush="true" append="false">
+            <PatternLayout pattern="${pFormat}"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <root level="ALL" additivity="false">
+            <AppenderRef ref="soubor" level="ALL"/>
+        </root>
+    </Loggers>
+</Configuration>
